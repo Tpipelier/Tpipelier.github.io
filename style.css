@@ -10,7 +10,7 @@ body::before{
     z-index: -1;
     position: absolute;
     content: "";
-    background: url("ile-Maurice.jpg");
+    background: url("imagedusite/Ile-Maurice.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
