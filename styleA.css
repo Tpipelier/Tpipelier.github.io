@@ -1,66 +1,70 @@
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 
-nav{
+nav {
     width: 100%;
     height: 70px;
-    background:linear-gradient(-180deg, #02731E 20%, #014005 100%),url('/imagedusite/Ile-Maurice.jpg') ; ;
+    background: linear-gradient(180deg, rgb(31, 16, 5) 20%, #251605 100%), url('/imagedusite/C.A.jpg');
     z-index: 1;
-    
+
 }
 
-.menu-nav ul{
+.menu-nav ul {
     display: flex;
     flex-direction: row;
     margin: 0;
 }
 
-.menu-nav ul li.btn{
+.menu-nav ul li.btn {
     list-style-type: none;
     font-size: 30px;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-.menu-nav ul li.btn a{
-    color: rgb(216, 212, 212); 
+.menu-nav ul li.btn a {
+    color: rgb(173, 177, 172);
     text-decoration: none;
 }
 
-.menu-nav ul li.btn:hover a{
-    color: black;
+.menu-nav ul li.btn:hover a {
+    color: rgb(248, 245, 245);
     transition: 0.3s all;
 }
-body,html{
+
+body,
+html {
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgb(41, 40, 40);
-    color: rgb(216, 212, 212);
+    background: radial-gradient(#151515 20%, #292929 100%), url('/imagedusite/C.A.jpg');
+    color: rgb(173, 177, 172);
 }
 
-main{
+main {
     overflow: auto;
-    height:90vh
+    height: 90vh
 }
-div.imgdp{
-    background-image:linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255,255,255,0) 100%),url('/imagedusite/Ile-Maurice.jpg') ;
+
+div.imgdp {
+    background-image: linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255, 255, 255, 0) 100%), url('/imagedusite/C.A.jpg');
     width: 100%;
-    height: 40rem;
+    height: 40em;
     background-size: cover;
-    padding:1em;
-    
-  
+    padding: 1em;
+
+
 
 }
-div.imgdp h1{
+
+div.imgdp h1 {
     margin-top: 180px;
-    text-shadow: 0 0 4px rgba(0,0,0,.4);
+    text-shadow: 0 0 4px rgba(0, 0, 0, .4);
     display: block;
     margin-left: 40px;
     text-align: left;
@@ -68,10 +72,10 @@ div.imgdp h1{
 
 }
 
-div.imgdp p{
-    margin-left:40px;
+div.imgdp p {
+    margin-left: 40px;
     margin-top: 60px;
-    text-shadow: 0 0 4px rgba(0,0,0,.4);
+    text-shadow: 0 0 4px rgba(0, 0, 0, .4);
     display: block;
     margin-bottom: 3.125rem;
     letter-spacing: -.03em;
@@ -79,7 +83,86 @@ div.imgdp p{
     text-align: left;
 
 }
+div.Paragraphe{
+    border: 15px lightcyan;
+    
+    
+}
+.Paragraphe h1{
+    position: center;
+    margin: 200 auto;
+    margin: auto;
+    margin-bottom:  100px;
+    text-align: center;
+}
+.Paragraphe p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #151515;
+}
+
+div.redirection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+}
+
+
+div.redirection li.muscu a,
+div.redirection li.quotidien a {
+    display: flex;
+    flex-grow: 1;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 200px ;
+    color:rgba(255, 255, 255, 0);
+    margin: 0 auto;
+}
+div.redirection li.muscu a{
+    background: url('imagedusite/C.A.Q.jpg');
+    background-size:auto;
+    margin-left: 75px;
+
+  
+}
+
+div.redirection li.quotidien a {
+    background:url('imagedusite/C.A.Q.jpg');
+    background-size:auto;
+    margin-right: 75px;
+    padding-right:190px;
+    
+}
+div.redirection li.quotidien a:hover {
+    transition:0.3s all;
+    box-shadow: 6px 6px 6px rgba(240, 248, 255, 0.363);
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255, 255, 255, 0) 100%), url('/imagedusite/C.A.Q.jpg');
+    background-size: contain;
+    color:rgb(255, 255, 255);
+}
+
+div.redirection li.muscu a:hover {
+
+    transition:0.3s all;
+    box-shadow: 6px 6px 6px rgba(240, 248, 255, 0.363);
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255, 255, 255, 0) 100%), url('/imagedusite/complements-alimentaires.jpg');
+    background-size: contain;
+    color:rgb(255, 255, 255);
+}
+
+
 
 /*:mailto ou ::mailto*/
-
-
