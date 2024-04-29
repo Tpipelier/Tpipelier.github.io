@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    float: none;
 }
 
 
@@ -83,86 +84,252 @@ div.imgdp p {
     text-align: left;
 
 }
-div.Paragraphe{
-    border: 15px lightcyan;
+.Paragraphe div.bloc1 div.part1{
+    justify-content: space-between;
+    margin-top:10vh;
+    padding-bottom: 20vh;
+}
+.Paragraphe div.bloc1 div.part2{
+    justify-content: space-between;
+    padding-bottom: 75vh;
+}
+.Paragraphe div.bloc1 div.part3{
+    justify-content: space-between;
+    padding-bottom: 75vh;
+    margin-top:10vh;
+}
+
+.Paragraphe div.bloc1 div.part1 div.txt{
+    width:40%;
+    margin-right: 40px;
+    float:right;
+
     
     
 }
-.Paragraphe h1{
-    position: center;
-    margin: 200 auto;
-    margin: auto;
-    margin-bottom:  100px;
-    text-align: center;
-}
-.Paragraphe p {
+.Paragraphe div.bloc1 div.part1 p {
+    margin-top: 25px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    height: 50vh;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    padding: 10px;
-    margin: 0 auto;
     text-align: center;
-    background-color: #151515;
+    flex-direction: column;
+    clear: both; 
+    
+    
+}
+.Paragraphe div.bloc1 div.part1 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    flex-direction: column;
+    
+    
+    
+}
+.Paragraphe div.bloc1 div.part2 div.txt{
+    width:50%;
+    margin-left: 40px;
+    float:left;
+    
+
+    
+    
+}
+.Paragraphe div.bloc1 div.part2 p {
+    margin-top: 25px;
+    display: flex;
+    height: 50vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    flex-direction: column;
+    clear: both; 
+    
+    
+}
+.Paragraphe div.bloc1 div.part2 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    flex-direction: column;
+    
+    
+    
+}
+
+.Paragraphe div.bloc1 div.part3 div.txt{
+    width:40%;
+    margin-right: 40px;
+    float:right;
+    margin-top: 75px;
+
+    
+    
+}
+.Paragraphe div.bloc1 div.part3 p {
+    margin-top: 25px;
+    display: flex;
+    height: 50vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    flex-direction: column;
+    clear: both; 
+    
+    
+}
+.Paragraphe div.bloc1 div.part3 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    flex-direction: column;
+    
+    
+    
+}
+.Paragraphe div.bloc1 div.part1 img {
+    font-family: Arial, sans-serif;
+    width: 40%;
+    margin-left:20px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.Paragraphe div.bloc1 div.part2 img {
+    font-family: Arial, sans-serif;
+    width: 40%;
+    margin-right: 20px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 25px;
+    float: right;
+}
+.Paragraphe div.bloc1 div.part3 img {
+    font-family: Arial, sans-serif;
+    width: 40%;
+    margin-left:20px;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 25px;
 }
 
 div.redirection {
+    padding-top:500px;
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 0 auto; 
    
 }
 
 
-div.redirection li.muscu a,
-div.redirection li.quotidien a {
-    display: flex;
-    flex-grow: 1;
-    list-style-type: none;
-    text-decoration: none;
-    font-weight: 200;
-    font-size: 25px;
-    border-radius: 10px;
-    padding: 200px ;
-    color:rgba(255, 255, 255, 0);
-    margin: 0 auto;
-}
-div.redirection li.muscu a{
-    background: url('imagedusite/C.A.Q.jpg');
-    background-size:auto;
-    margin-left: 75px;
+div.redirection a{
+    pointer-events: none;
 
-  
-}
-
-div.redirection li.quotidien a {
-    background:url('imagedusite/C.A.Q.jpg');
-    background-size:auto;
-    margin-right: 75px;
-    padding-right:190px;
     
 }
-div.redirection li.quotidien a:hover {
+div.redirection figure.muscu,
+div.redirection figure.quotidien {
+    display: flex;
+    flex-direction: column; /* Pour empiler l'image et le texte */
+    align-items: center; /* Pour centrer les éléments horizontalement */
+    justify-content: center;
+    text-align: center; /* Pour centrer le texte horizontalement */
+    position: relative; /* Permet de positionner le texte par rapport à l'image */
+}
+div.redirection a.muscu img,
+div.redirection a.quotidien img{
+    pointer-events: auto; 
+    border-radius: 25px;
+    padding: 5px;
+    width:50%;
+    transition: transform 0.3s ease;
+    
+}
+div.redirection a.muscu figcaption,
+div.redirection a.quotidien figcaption {
+    pointer-events: auto; 
+    margin-top: 10px; /* Pour ajouter un peu d'espace entre l'image et le texte */
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    position: absolute; /* Positionnement absolu par rapport au conteneur */
+    top: 50%; /* Alignement au centre vertical */
+    left: 50%; /* Alignement au centre horizontal */
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+div.redirection a img:hover {
+    transform: scale(1.1);
     transition:0.3s all;
     box-shadow: 6px 6px 6px rgba(240, 248, 255, 0.363);
-    background: linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255, 255, 255, 0) 100%), url('/imagedusite/C.A.Q.jpg');
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255, 255, 255, 0) 100%);
     background-size: contain;
     color:rgb(255, 255, 255);
 }
 
-div.redirection li.muscu a:hover {
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Ajustez selon vos besoins */
+    max-width: 500px; /* Ajustez selon la largeur de votre contenu */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+}
 
-    transition:0.3s all;
-    box-shadow: 6px 6px 6px rgba(240, 248, 255, 0.363);
-    background: linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255, 255, 255, 0) 100%), url('/imagedusite/complements-alimentaires.jpg');
-    background-size: contain;
-    color:rgb(255, 255, 255);
+.contact-form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
 }
 
 
+.contact-form input[type="submit"] {
+    color: rgb(173, 177, 172);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
+.contact-form input[type="submit"]:hover {
+    background-color:#251605; /* Changement de couleur au survol */
+    color: #fff;
+}
+
+/* Définissez les styles pour afficher l'icône de messagerie */
+#mail-icon {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+}
 /*:mailto ou ::mailto*/
