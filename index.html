@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Site compléments alimentaire</title>
+    <title>Site compléments alimentaires</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleA.css">
@@ -13,13 +13,13 @@
         <nav class="menu-nav">
             <ul>
                 <li class="btn">
-                    <a href="#">
+                    <a href="#intro">
                         Accueil
                     </a>
                 </li>
                 <li class="btn">
 
-                    <a href="#">
+                    <a href="#mail">
                         Contact
                     </a>
                 </li>
@@ -27,14 +27,13 @@
         </nav>
     </header>
     <main>
-        <div class="imgdp">
+        <div id="intro" class="imgdp">
             <h1>
-                Les compléments Alimentaire c'est quoi ?
+                Les compléments Alimentaires c'est quoi ?
             </h1>
             <p>
-                Une légende pour certains,<br> des mensonges pour d'autres ,mais des fonds de réalité pour tous.<br>
-                Ensemble nous definirons
-                correctement ce que sont les compléments alimentaire <br>et nous
+                Une légende pour certains,<br> des mensonges pour d'autres, mais des fonds de réalité pour tous.<br>
+                Ensemble nous définirons ce que sont les compléments alimentaires <br>et nous
                 démêlerons le vrai du faux.
             </p>
 
@@ -69,33 +68,37 @@
 
                 <div class="part2">
                     <div class="txt">
-                        <h2> Dans quel situations en prendre ?</h2>
+                        <h2> Dans quelles situations en prendre ?</h2>
                         <p>
-                            Dans des situations où les besoins nutritionnels sont accrus, comme pendant la grossesse,
+                            Dans des situations où les besoins nutritionnels sont accrus, comme pendant la grossesse,la musculations,
                             l'allaitement, la croissance des enfants, ou lors d'une convalescence après une maladie.<br>
                             Il est important de noter que les compléments alimentaires ne sont pas censés remplacer une
-                            alimentation équilibrée.<br> Ils sont conçus pour compléter l'alimentation, et non pour
+                            alimentation équilibrée.Ils sont conçus pour compléter l'alimentation, et non pour
                             la remplacer. Une alimentation saine et variée reste la meilleure source de nutriments. Les
                             compléments alimentaires
                             ne doivent pas être considérés comme des substituts à une alimentation équilibrée.<br>
                             Il est également essentiel de prendre des compléments alimentaires conformément aux
                             recommandations
                             de dosage et de durée d'utilisation indiquées par le fabricant ou un
-                            professionnel<br> de la santé qualifié. Il est recommandé de consulter un professionnel de
+                            professionnel de la santé qualifié. Il est recommandé de consulter un professionnel de
                             la
                             santé
                             avant de commencer
                             à prendre des compléments alimentaires, surtout si vous avez des problèmes de santé
                             existants ou si vous prenez d'autres médicaments,
-                            car certains compléments peuvent interagir avec certains médicaments.<br>
+                            car certains compléments peuvent interagir avec certains médicaments.
+                            <br>
+                            Vous souhaitez en apprendre plus sur les compléments que vous pourriez et devriez prendre ?
+                            <a href="#redirection">cliquer ici</a>
                         </p>
+                        
                     </div>
                     <img src="imagedusite/cdc.jpg" alt="">
                 </div>
                 <div class="part3">
 
                     <div class="txt">
-                        <h2> rester prudent </h2>
+                        <h2> Rester prudent </h2>
                         <p>
                             Il convient de noter que les compléments alimentaires ne sont pas réglementés de la même
                             manière que les médicaments.<br>
@@ -118,11 +121,11 @@
 
             </div>
             <div class="redirection">
-                <figure class="muscu">
+                <figure  class="muscu">
                     <a class="muscu" href="muscu.html">
 
-                        <img src="imagedusite/complement-muscu.jpg" alt="">
-                        <figcaption class="muscu">
+                        <img src="imagedusite/shaker.jpg" alt="">
+                        <figcaption id="redirection" class="muscu">
                             <h2>
                                 Complément muscu
                             </h2>
@@ -134,7 +137,7 @@
 
                 <figure class="quotidien">
                     <a class="quotidien" href="quotidien.html">
-                        <img src="imagedusite/complement-ali2.jpg" alt="">
+                        <img src="imagedusite/quotidien.jpg" alt="">
                         <figcaption class="quotidien">
                             <h2>
                                 Complément au quotidien
@@ -149,36 +152,29 @@
 
 
             </div>
+            <div id="video" class="video">
+
+                <h2>Vous avez eu du mal à comprendre ? Ou vous souhaitez en savoir plus ?</h2> 
+                <iframe width="960" height="515" src="https://www.youtube.com/embed/lUelI7BQaKY?si=x1MPgtK4MSSEKksk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </div>
 
 
             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-            <div id="mail-icon">
-
-                <h3>Contactez-nous</h3>
+            <div id="mail">
+                <h2>Mail</h2>
+                <ion-icon height="20" name="mail-outline" href="mailto:theo.pipel@gmail.com"></ion-icon>
+                <h3>
+                    <a class="email-link" href="mailto:theo.pipel@gmail.com">Contactez-nous </a>
+            
+                </h3>
 
             </div>
 
-            <!-- Ajoutez cet élément pour le formulaire de contact -->
-            <div id="contact-form" class="contact-form hidden">
-
-
-                <form action="send_email.php" method="post">
-                    <label for="name">Nom:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-                    <input type="submit" value="Envoyer">
-                </form>
-            </div>
 
     </main>
-
-
-
 </body>
 
 </html>
