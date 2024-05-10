@@ -477,15 +477,15 @@ div.intro_quotidien ol li{
     pointer-events: none;
 }
 div.intro_quotidien ol li.D{
-    width:11%;
+    width:12%;
     pointer-events: auto;
 }
 div.intro_quotidien ol li.omega-3{
-    width:9.125%;
+    width:9.55%;
     pointer-events: auto;
 }
 div.intro_quotidien ol li.fer{
-    width:3%;
+    width:4%;
     pointer-events: auto;
 }
 div.intro_quotidien ol li.zinc{
@@ -505,7 +505,7 @@ div.intro_quotidien ol li.calcium{
     pointer-events: auto;
 }
 div.intro_quotidien ol li.B12{
-    width:13.5%;
+    width:13.85%;
     pointer-events: auto;
 }
 div.intro_quotidien ol li a{
