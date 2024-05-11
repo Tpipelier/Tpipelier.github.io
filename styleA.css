@@ -406,7 +406,7 @@ div.video iframe:hover {
 }
 
 #mail ion-icon:hover {
-    color: #FAF5E9;
+    color: #000000;
     transition: 0.6s all;
     background-color: #FFCC00;
     border-radius: 2px;
@@ -682,6 +682,7 @@ div.Tab_comparatif h2{
 }
 
 div.Tab_comparatif a{
+    transition: 0.6s all;
     float: left;
     margin-left: 55px;
     margin-top: 20px;
@@ -693,17 +694,18 @@ div.Tab_comparatif a{
     padding:10px;
     border-width: 2px;
     border-color: #FFCC00;
-    transition: 0.6 all;
+   
 
 }
 div.Tab_comparatif a:hover{
+    transition: 0.6s all;
     background-color: #FFCC00;
     color: black;
-    transition: 0.3 all;
+    
 
 }
 h1.Tab{
-    margin-top: 160px;
+    padding-top: 160px;
     margin-bottom: 150px;
     text-align: center;
     align-items: center;
@@ -722,7 +724,7 @@ div.Tab div.bloc1{
 
 }
 div.Tab div.bloc1 div.intro{
-    margin-left: 40px;
+    margin-left: 80px;
     padding-bottom: 40px;
     padding-right: 0px;
     line-height: 1.5;
@@ -737,7 +739,7 @@ div.Tab div.intro p{
 }
 iframe.Tab{
     pointer-events: auto;
-    margin-top: -375px;
+    margin-top: -385px;
     float: right;
     transition: 0.3s all;
     margin-right: 100px;
@@ -751,9 +753,11 @@ iframe.Tab:hover{
 table{
     padding: 10px;
     transition: 0.3 all;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 25vh;
     align-items: center;
-    width: 100%;
+    width: 70%;
 
 
 }
@@ -777,4 +781,16 @@ table tr th{
     border-style:groove;
     border-width: 2px;
     transition: 0.3 all;
+}
+div.conclusion{
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    clear: both;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    float: left;
+    margin-left: 40px;
+    padding: 200px;
+    padding-left: 0px;
 }
