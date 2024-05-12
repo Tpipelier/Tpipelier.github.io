@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 
@@ -17,9 +18,13 @@ nav {
     background: #0a0404fc;
     z-index: 1;
     pointer-events: none;
+    
 
 }
 h2{
+    color: #FFCC00;
+}
+strong{
     color: #FFCC00;
 }
 .menu-nav ul {
@@ -49,17 +54,17 @@ h2{
 
 body,
 html {
+    
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background: #0a0404fc;
+    background-color:  #0a0404fc;
     color: #FAF5E9;
 }
 
 main {
     overflow: auto;
-    height: 90vh
+    height: 90vh;
 }
 
 div.imgdp {
@@ -262,17 +267,17 @@ div.bloc1 div.part3 img {
 }
 
 div.redirection {
-    padding-top: 500px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-
+    margin-bottom: 75vh;
 }
 
 
 div.redirection a {
     pointer-events: none;
-    margin-bottom: 50vh;
+    
 
     
 
@@ -280,6 +285,7 @@ div.redirection a {
 
 div.redirection figure.muscu,
 div.redirection figure.quotidien {
+    margin-top: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -312,6 +318,7 @@ div.redirection figcaption{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    transition: 0.3s all;
 }
 
 
@@ -360,15 +367,9 @@ div.video h2 {
 
 }
 
-div.video iframe {
+iframe {
     border-radius: 35px;
     transition: 0.6s all;
-}
-
-div.video iframe:hover {
-    transform: scale(1.1);
-    transition: 0.6s all;
-    box-shadow: 6px 6px 6px #FFCC00;
 }
 
 /* Définissez les styles pour afficher l'icône de messagerie */
@@ -377,6 +378,8 @@ div.video iframe:hover {
     margin-left: 40px;
     float: left;
     width: 100%;
+    max-width: 90%;
+    overflow: hidden;
 }
 
 #mail h2 {
@@ -421,9 +424,13 @@ div.video iframe:hover {
 
 
 }
-div.intr_muscu div.bloc1,
+div.intro_muscu{
+    margin-bottom:100px;
+}
+div.intro_muscu div.bloc1,
 div.intro_quotidien div.bloc1{
     justify-content: center;
+    
 
 
 }
@@ -439,7 +446,7 @@ div.intro_muscu div.bloc1 h1{
     text-align: center;
     color: #FFCC00;
     margin-top: 0px;
-    padding-top: 160px;
+    padding-top: 125px;
     pointer-events: none;
 
 }
@@ -457,19 +464,36 @@ div.intro_quotidien p{
     flex-direction: column;
     pointer-events: none;
 }
-div.intro_muscu p{
-    margin-top: 190px;
+div.intro_muscu div.bloc1 p{
+    margin-top: 10%;
     text-align: left;
     float: right;
     line-height: 1.5;
     width:50%;
-    margin-right: 40px;
+    margin-right: 70px;
     padding-left: 100px;
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     flex-direction: column;
     pointer-events: none;
+}
+div.intro_muscu div.bloc2{
+    align-items: center;
+    margin-top: 100px;
+    text-align: left;
+    float: right;
+    line-height: 1.5;
+    width:50%;
+    margin-right: -30px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    pointer-events: none;
+}
+div.intro_muscu div.bloc2 p{
+    padding-bottom: 0px;
 }
 div.intro_quotidien p a{
     color: #FFCC00;
@@ -480,10 +504,8 @@ div.intro_quotidien ol{
     text-align: left;
     float: left;
     line-height: 2;
-    margin-top: 100px;
     width:50%;
     margin-left: 160px;
-    margin-top:10px;
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 0px;
@@ -494,19 +516,15 @@ div.intro_quotidien ol{
 }
 div.intro_muscu ol{
     text-align: left;
-    float: right;
+    width: 20%;
     line-height: 2;
-    margin-top: 100px;
-    margin-left: 50%;
-    margin-right: 20%;
-    margin-top:0px;
+    margin-top: 10px;
     padding-right: 0px;
     padding-left: 0px;
-    padding-top: 100px;
     padding-bottom: 0px;
     flex-direction: column;
     pointer-events: none;
-
+    margin-left: 25%;
 }
 div.intro_quotidien ol li{
     width:11%;
@@ -530,16 +548,16 @@ div.intro_quotidien ol li.D{
     pointer-events: auto;
 }
 div.intro_muscu ol li.proteine{
-    width:12.15%;
+    width:100.15%;
     pointer-events: auto;
 }
-div.intro_muscu ol li.omega-3,
+
 div.intro_quotidien ol li.omega-3{
     width:9.95%;
     pointer-events: auto;
 }
 div.intro_muscu ol li.creatine{
-    width:9.95%;
+    width:111%;
     pointer-events: auto;
 }
 div.intro_quotidien ol li.fer{
@@ -563,7 +581,7 @@ div.intro_quotidien ol li.B12{
     pointer-events: auto;
 }
 div.intro_muscu ol li.beta{
-    width:14.55%;
+    width:62.85%;
     pointer-events: auto;
 }
 div.intro_quotidien ol li.probiotiques{
@@ -571,14 +589,17 @@ div.intro_quotidien ol li.probiotiques{
     pointer-events: auto;
 }
 div.intro_muscu ol li.citru{
-    width:10%;
+    width:82.5%;
     pointer-events: auto;
 }
 div.intro_quotidien ol li.magnesium{
     width:8%;
     pointer-events: auto;
 }
-
+div.intro_muscu ol li.omega-3{
+    width:48%;
+    pointer-events: auto;
+}
 div.intro_quotidien ol li.zinc{
     width:4%;
     pointer-events: auto;
@@ -621,6 +642,7 @@ div.intro_muscu div.bloc1 iframe{
     transition: 0.3s all;
     margin-left: 60px;
     border-radius: 15px;
+    
 }
 div.intro_quotidien div.bloc1 iframe:hover{
     scale: 1.1;
@@ -668,11 +690,20 @@ div.informations div.bloc7 div.magnesium_txt{
     float: right;
     
 }
-
-div.informations div.bloc1 div.D_txt h3,
-div.informations div.bloc3 div.fer_txt h3,
-div.informations div.bloc5 div.B12_txt h3,
-div.informations div.bloc7 div.magnesium_txt h3{
+div.informations div.bloc2 div.creatine_txt,
+div.informations div.bloc4 div.glutamine_txt,
+div.informations div.bloc6 div.citru_txt,
+div.informations div.bloc8 div.cafeine_txt{
+    margin-top:145px ;
+    width: 40%;
+    text-align: left;
+    margin-right: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 500px;
+    float: right;
+    
+}
+div.informations h3{
     color: #FFCC00;
     display: flex;
     clear: both;
@@ -681,10 +712,7 @@ div.informations div.bloc7 div.magnesium_txt h3{
     margin-top: 0px;
 
 }
-div.informations div.bloc1 div.D_txt p,
-div.informations div.bloc3 div.fer_txt p,
-div.informations div.bloc5 div.B12_txt p,
-div.informations div.bloc7 div.magnesium_txt p{
+div.informations p{
 
     margin-top: 0px;
     display: flex;
@@ -709,6 +737,20 @@ div.informations div.bloc7 img{
 
 
 }
+div.informations div.bloc2 img.muscu,
+div.informations div.bloc4 img.muscu,
+div.informations div.bloc6 img.muscu,
+div.informations div.bloc8 img.muscu{
+    width: 50%;
+    float: left;
+    padding: 100px;
+    border-radius: 125px;
+    text-align: center;
+    margin-bottom: 500px;
+    margin-left:10px;
+
+
+}
 div.informations div.bloc2 div.omega-3_txt,
 div.informations div.bloc4 div.calcium_txt,
 div.informations div.bloc6 div.probiotiques_txt,
@@ -723,31 +765,21 @@ div.informations div.bloc8 div.zinc_txt{
     
 
 }
-div.informations div.bloc2 div.omega-3_txt h3,
-div.informations div.bloc4 div.calcium_txt h3,
-div.informations div.bloc6 div.probiotiques_txt h3,
-div.informations div.bloc8 div.zinc_txt h3{
-    color: #FFCC00;
-    display: flex;
-    clear: both;
-    pointer-events: none;
-    margin-bottom: 30px;
-    margin-top: 0px;
+div.informations div.bloc1 div.prot_txt,
+div.informations div.bloc3 div.BCAA_txt,
+div.informations div.bloc5 div.beta_txt,
+div.informations div.bloc7 div.omega-3_muscu_txt{
+    float: left;
+    margin-top:125px ;
+    width: 40%;
+    text-align: left;
+    margin-left: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 300px;
+    
 
 }
-div.informations div.bloc2 div.omega-3_txt p,
-div.informations div.bloc4 div.calcium_txt p,
-div.informations div.bloc6 div.probiotiques_txt p,
-div.informations div.bloc8 div.zinc_txt p{
 
-    margin-top: 0px;
-    display: flex;
-    font-size: 16px;
-    line-height: 1.5;
-    clear: both;
-    pointer-events: none;
-
-}
 div.informations div.bloc2 img,
 div.informations div.bloc4 img,
 div.informations div.bloc6 img,
@@ -759,8 +791,18 @@ div.informations div.bloc8 img{
     text-align: center;
     margin-bottom: 500px;
     margin-left:10px;
-
-
+}
+div.informations div.bloc1 img.muscu,
+div.informations div.bloc3 img.muscu,
+div.informations div.bloc5 img.muscu,
+div.informations div.bloc7 img.muscu{
+    width: 50%;
+    float: right;
+    padding: 100px;
+    border-radius: 125px;
+    text-align: center;
+    margin-bottom: 500px;
+    margin-left:10px;
 }
 div.Tab_comparatif{
     width: 100%;
@@ -799,6 +841,7 @@ div.Tab_comparatif a:hover{
     
 
 }
+h1.Tab2,
 h1.Tab{
     padding-top: 160px;
     margin-bottom: 150px;
@@ -809,13 +852,17 @@ h1.Tab{
     color: #FFCC00;
 
 }
-
+div.Tab2 div.bloc1,
 div.Tab div.bloc1{
     align-items: center;
     justify-content: space-between;
     width: 100%;
     text-align: left;
     pointer-events: none;
+
+}
+div.Tab2 div.bloc1{
+    padding-bottom:50vh ;
 
 }
 div.Tab div.bloc1 div.intro{
@@ -825,13 +872,23 @@ div.Tab div.bloc1 div.intro{
     line-height: 1.5;
     width: 40%;
     flex-direction: column;
+   
 
 }
+div.Tab2 div.bloc1 div.intro{
+    margin-right: 80px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    line-height: 1.5;
+    width: 40%;
+    flex-direction: column;
+    float: right;
+}
 
-
-div.Tab div.intro p{
+p{
    margin-top: 20px;
 }
+
 iframe.Tab{
     pointer-events: auto;
     margin-top: -385px;
@@ -840,7 +897,14 @@ iframe.Tab{
     margin-right: 100px;
     border-radius: 15px;
 }
-iframe.Tab:hover{
+iframe.Tab2{
+    pointer-events: auto;
+    float: left;
+    transition: 0.3s all;
+    margin-left: 100px;
+    border-radius: 15px;
+}
+iframe:hover{
     scale: 1.1;
     transition: 0.3s all;
     box-shadow: 6px 6px 6px #FFCC00;
@@ -877,6 +941,7 @@ table tr th{
     border-width: 2px;
     transition: 0.3 all;
 }
+div.conclusion_muscu,
 div.conclusion {
     margin-top: 200px;
     height: 50vh;
@@ -895,10 +960,27 @@ div.conclusion div.txt{
     float: right;
     margin-right: 80px;
 }
+div.conclusion_muscu div.txt{
+    width: 40%;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 75px;
+    clear: both;
+    float: left;
+    margin-left: 80px;
+}
 div.conclusion img{
     width: 50%;
     float: left;
     margin-right: 40px;
+    padding: 100px;
+    border-radius: 125px;
+}
+div.conclusion_muscu img{
+    margin-top: 30px;
+    width: 50%;
+    float: right;
+    margin-left: 40px;
     padding: 100px;
     border-radius: 125px;
 }
