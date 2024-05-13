@@ -14,7 +14,11 @@
     transition: 0.6s all;
 
 }
-
+iframe:hover{
+    scale:1.1;
+    transition: 0.6s all;
+    box-shadow: 6px 6px 6px #FFCC00;
+}
 
 nav {
     font-size: 1.1rem;
@@ -604,16 +608,16 @@ div.intro_quotidien ol a:hover {
 
 .intro_muscu div.bloc1 iframe,
 .intro_quotidien div.bloc1 iframe {
-    margin-top: 8%;
+    margin-top: -22%;
     float: right;
     transition: 0.3s all;
-    margin-right: 60px;
+    margin-right: 6%;
     border-radius: 15px;
 }
 
 .intro_muscu div.bloc1 iframe {
     float: left;
-    margin-left: 2%;
+    margin-left: 6%;
 }
 
 .informations {
@@ -870,7 +874,7 @@ p {
 
 iframe.Tab {
     pointer-events: auto;
-    margin-top: -25%;
+    margin-top: 0%;
     float: right;
     margin-right: 10%;
 }
