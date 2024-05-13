@@ -7,7 +7,12 @@
     scroll-behavior: smooth;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
+}
+
+*:hover {
+    transition: 0.6s all;
+
 }
 
 
@@ -18,15 +23,19 @@ nav {
     background: #0a0404fc;
     z-index: 1;
     pointer-events: none;
-    
+
 
 }
-h2{
+
+h2 {
+    color: #FFCC00;
+
+}
+
+strong {
     color: #FFCC00;
 }
-strong{
-    color: #FFCC00;
-}
+
 .menu-nav ul {
     display: flex;
     flex-direction: row;
@@ -36,8 +45,8 @@ strong{
 .menu-nav ul li.btn {
     list-style-type: none;
     font-size: 30px;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 2%;
+    margin-top: 1.5%;
     pointer-events: auto;
 }
 
@@ -49,16 +58,15 @@ strong{
 
 .menu-nav ul li.btn:hover a {
     color: #FFCC00;
-    transition: 0.3s all;
 }
 
 body,
 html {
-    
+
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color:  #0a0404fc;
+    background-color: #0a0404fc;
     color: #FAF5E9;
 }
 
@@ -67,7 +75,7 @@ main {
     height: 90vh;
 }
 
-div.imgdp {
+.imgdp {
     background-image: linear-gradient(180deg, #0a0404fc 0%, rgba(255, 255, 255, 0) 60%), linear-gradient(0deg, #0a0404fc 0%, rgba(255, 255, 255, 0) 60%), url('/imagedusite/C.A.jpg');
     width: 100%;
     height: 50em;
@@ -75,20 +83,20 @@ div.imgdp {
     padding: 1em;
 }
 
-div.imgdp h1 {
-    margin-top: 180px;
+.imgdp h1 {
+    margin-top: 6%;
     text-shadow: 0 0 4px rgba(0, 0, 0, .4);
     display: block;
-    margin-left: 40px;
+    margin-left: 4%;
     text-align: left;
     color: #FFCC00;
     pointer-events: none;
 
 }
 
-div.imgdp p {
-    margin-left: 40px;
-    margin-top: 60px;
+.imgdp p {
+    margin-left: 4%;
+    margin-top: 6%;
     text-shadow: 0 0 4px rgba(0, 0, 0, .4);
     display: block;
     margin-bottom: 3.125rem;
@@ -99,27 +107,28 @@ div.imgdp p {
 
 }
 
-div.bloc1 div.part1 {
+.bloc1 div.part1,
+.bloc1 div.part2,
+.bloc1 div.part3 {
     justify-content: space-between;
-    margin-top: 40vh;
+    margin-top: 40%;
     padding-bottom: 20vh;
 }
 
-div.bloc1 div.part2 {
+.bloc1 div.part3 {
     justify-content: space-between;
-    margin-top: 30vh;
-}
-
-div.bloc1 div.part3 {
-    justify-content: space-between;
+    margin-top: 60%;
     padding-bottom: 20vh;
-    margin-top: 120vh;
 }
 
-div.bloc1 div.part1 div.txt {
-    width: 50%;
-    margin-top: 75px;
-    margin-right: 75px;
+
+
+.bloc1 div.part1 div.txt,
+.bloc1 div.part2 div.txt,
+.bloc1 div.part3 div.txt {
+    width: 40%;
+    margin-top: 1%;
+    margin-right: 5%;
     float: right;
     text-align: left;
     pointer-events: none;
@@ -128,56 +137,48 @@ div.bloc1 div.part1 div.txt {
 
 }
 
-div.bloc1 div.part1 p {
-    margin-top: 25px;
-    display: flex;
-    height: 50vh;
-    font-size: 16px;
-    line-height: 1.5;
-    flex-direction: column;
-    clear: both;
-    pointer-events: none;
-
-
-}
-
-div.bloc1 div.part1 h2 {
-
-    text-align: center;
-    flex-direction: column;
-    pointer-events: none;
-
-
-
-}
-
-div.bloc1 div.part2 div.txt {
+.bloc1 div.part2 div.txt {
     width: 50%;
     margin-left: 40px;
+    margin-right: 0%;
     float: left;
-    text-align: left;
-    pointer-events: none;
+    font-size: 90%;
 
 
 
 }
 
-div.bloc1 div.part2 p {
-    margin-top: 25px;
+.bloc1 div.part1 p,
+.bloc1 div.part2 p,
+.bloc1 div.part3 p {
+    text-align: left;
+    margin-top: 2%;
     display: flex;
     height: 50vh;
     font-size: 16px;
     line-height: 1.5;
-    text-align: left;
     flex-direction: column;
     clear: both;
     pointer-events: none;
 
+
 }
 
-div.bloc1 div.part2 div.txt p a {
-    width: 12.75%;
+.bloc1 div.part1 h2,
+.bloc1 div.part2 h2,
+.bloc1 div.part2 h2 {
     text-align: left;
+    flex-direction: column;
+    pointer-events: none;
+
+
+
+}
+
+
+.bloc1 div.part2 div.txt p a {
+    width: 18.75%;
+    text-align: center;
     border-radius: 25px;
     border-width: 2px;
     border-style: dashed;
@@ -185,122 +186,75 @@ div.bloc1 div.part2 div.txt p a {
     color: #FFCC00;
     text-decoration: none;
     margin-top: 0px;
-    padding: 3px;
-    padding-left: 6px;
-    padding-right: 1px;
+    padding: 0.01%;
     transition: 0.6s all;
     pointer-events: auto;
 
 }
 
-div.bloc1 div.part2 div.txt p a:hover {
+.bloc1 div.part2 div.txt p a:hover {
     background-color: #FFCC00;
     color: black;
     transition: 0.6s all;
 
 }
 
-div.bloc1 div.part2 h2 {
-    text-align: center;
-    flex-direction: column;
-    pointer-events: none;
-
-
-
-}
-div.bloc1 div.part3 div.txt {
-    width: 50%;
-    margin-right: 75px;
-    float: right;
-    margin-top: 75px;
-    pointer-events: none;
-
-
-
-
-}
-
-div.bloc1 div.part3 p {
-    margin-top: 25px;
-    display: flex;
-    height: 50vh;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    flex-direction: column;
-    clear: both;
-    pointer-events: none;
-
-
-}
-div.bloc1 div.part3 h2 {
-    text-align: center;
-    flex-direction: column;
-    pointer-events: none;
-
-
-}
-
-div.bloc1 div.part1 img {
-    width: 40%;
-    margin-left: 20px;
-    text-align: center;
+img {
     flex-direction: column;
     border-radius: 25px;
 }
 
-div.bloc1 div.part2 img {
+.bloc1 div.part1 img,
+.bloc1 div.part2 img,
+.bloc1 div.part3 img {
     width: 40%;
-    margin-right: 20px;
-    text-align: center;
-    flex-direction: column;
+    margin-left: 2%;
+    float: left;
     border-radius: 25px;
+}
+
+
+.bloc1 div.part2 img {
+    margin-top: 4%;
+    margin-right: 2%;
     float: right;
 }
 
-div.bloc1 div.part3 img {
-    width: 40%;
-    margin-left: 20px;
+h2.redirection_titre {
+    margin-top: 30%;
+    width: 100%;
     text-align: center;
-    flex-direction: column;
-    border-radius: 25px;
+
 }
 
-div.redirection {
-    padding-top: 200px;
+.redirection {
+    width: 100%;
+    padding-top: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 75vh;
-}
-
-
-div.redirection a {
     pointer-events: none;
-    
-
-    
-
 }
 
-div.redirection figure.muscu,
-div.redirection figure.quotidien {
-    margin-top: 50%;
+
+.redirection a figure.muscu,
+.redirection a figure.quotidien {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 90px;
-    padding-bottom:10px;
-    height: 40vh;
-    width: 70%;
-    margin-left:100px;
+    padding: auto;
+    padding-bottom: 15%;
+    width: 50%;
+    margin-left: 25%;
+
 }
 
-div.redirection figure.muscu img,
-div.redirection figure.quotidien img {
+.redirection figure.muscu img,
+.redirection figure.quotidien img {
     pointer-events: auto;
     border-radius: 25px;
     width: 100%;
@@ -308,13 +262,13 @@ div.redirection figure.quotidien img {
 
 }
 
-div.redirection figcaption{
+.redirection figcaption {
     pointer-events: auto;
-    margin-top: 10px;
+    height: 40%;
     color: #ffcc0000;
     font-size: 16px;
     position: absolute;
-    top: -6%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -325,44 +279,38 @@ div.redirection figcaption{
 
 
 
-div.redirection  figure:hover img {
+.redirection figure:hover img {
     transform: scale(1.1);
-    transition: 0.6s all;
     box-shadow: 6px 6px 6px #FFCC00;
     background: linear-gradient(90deg, rgba(34, 34, 34, 0.688) 0%, rgba(255, 255, 255, 0) 100%);
     background-size: contain;
     color: rgb(255, 255, 255);
 }
-div.redirection  figure:hover figcaption{
-    transition: 0.6s all;
+
+.redirection figure:hover figcaption {
     background-color: #2d2c2b63;
     border-radius: 25px;
-    padding-bottom:5px;
-    padding-top:5px;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
-div.redirection  figure:hover figcaption p {
-    transition: 0.6s all;
-    color: #FAF5E9;
-}
-div.redirection  figure:hover figcaption h3 {
-    transition: 0.6s all;
+
+.redirection figure:hover figcaption h3 {
     color: #FFCC00;
 }
-div.redirection  figure:hover figcaption p {
-    margin-top: 10px;
-    transition: 0.6s all;
+
+.redirection figure:hover figcaption p {
+    margin-top: 10%;
     color: #FAF5E9;
 }
 
-div.video {
+.video {
     text-align: center;
     padding-bottom: 50vh;
-    color: #FFCC00;
 
 }
 
-div.video h2 {
-    margin-bottom: 40px;
+.video h2 {
+    margin-bottom: 4%;
 
 
 }
@@ -375,7 +323,7 @@ iframe {
 /* Définissez les styles pour afficher l'icône de messagerie */
 #mail {
     position: relative;
-    margin-left: 40px;
+    margin-left: 2%;
     float: left;
     width: 100%;
     max-width: 90%;
@@ -424,88 +372,96 @@ iframe {
 
 
 }
-div.intro_muscu{
-    margin-bottom:100px;
+
+.intro_muscu {
+    margin-bottom: 10%;
 }
+
 div.intro_muscu div.bloc1,
-div.intro_quotidien div.bloc1{
+div.intro_quotidien div.bloc1 {
     justify-content: center;
-    
+
 
 
 }
-div.intro_quotidien div.bloc1 h1{ 
+
+.intro_muscu div.bloc1 h1,
+.intro_quotidien div.bloc1 h1 {
     text-align: center;
     color: #FFCC00;
-    margin-top: 0px;
-    padding-top: 160px;
+    margin-top: 0%;
+    padding-top: 16%;
     pointer-events: none;
 
 }
-div.intro_muscu div.bloc1 h1{ 
-    text-align: center;
-    color: #FFCC00;
-    margin-top: 0px;
-    padding-top: 125px;
-    pointer-events: none;
+
+.intro_muscu div.bloc1 h1 {
+    margin-top: 0%;
+    padding-top: 12.5%;
+
 
 }
-div.intro_quotidien p{
-    margin-top: 190px;
+
+.intro_muscu div.bloc1 p,
+.intro_quotidien p {
+    margin-top: 10%;
     text-align: left;
     float: left;
     line-height: 1.5;
-    width:50%;
-    margin-left: 40px;
-    padding-right: 100px;
+    width: 50%;
+    margin-left: 4%;
+    padding-right: 10%;
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     flex-direction: column;
     pointer-events: none;
 }
-div.intro_muscu div.bloc1 p{
+
+.intro_muscu div.bloc1 p {
+    margin-top: 10%;
+    float: right;
+    line-height: 1.5;
+    margin-left: 0%;
+    margin-right: 7%;
+    padding-left: 10%;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.intro_muscu div.bloc2 {
+    align-items: center;
     margin-top: 10%;
     text-align: left;
     float: right;
     line-height: 1.5;
-    width:50%;
-    margin-right: 70px;
-    padding-left: 100px;
+    width: 50%;
+    margin-right: -3%;
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     flex-direction: column;
     pointer-events: none;
 }
-div.intro_muscu div.bloc2{
-    align-items: center;
-    margin-top: 100px;
-    text-align: left;
-    float: right;
-    line-height: 1.5;
-    width:50%;
-    margin-right: -30px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    flex-direction: column;
-    pointer-events: none;
-}
-div.intro_muscu div.bloc2 p{
+
+.intro_muscu div.bloc2 p {
     padding-bottom: 0px;
 }
-div.intro_quotidien p a{
+
+.intro_quotidien p a {
     color: #FFCC00;
     pointer-events: auto;
 
 }
-div.intro_quotidien ol{
+
+.intro_muscu ol,
+.intro_quotidien ol {
     text-align: left;
     float: left;
     line-height: 2;
-    width:50%;
-    margin-left: 160px;
+    width: 50%;
+    margin-left: 16%;
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 0px;
@@ -514,205 +470,242 @@ div.intro_quotidien ol{
     pointer-events: none;
 
 }
-div.intro_muscu ol{
+
+.intro_muscu ol {
     text-align: left;
+    float: none;
     width: 20%;
-    line-height: 2;
-    margin-top: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin-top: 1%;
+    padding-top: none;
     padding-bottom: 0px;
-    flex-direction: column;
-    pointer-events: none;
     margin-left: 25%;
 }
-div.intro_quotidien ol li{
-    width:11%;
+
+.intro_quotidien ol li {
+    width: 11%;
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 0px ;
+    padding-right: 0px;
     transition: 0.3s all;
     pointer-events: none;
 }
-div.intro_muscu ol li{
+
+.intro_muscu ol li {
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 0px ;
+    padding-right: 0px;
     transition: 0.3s all;
     pointer-events: none;
 }
-div.intro_quotidien ol li.D{
-    width:12.15%;
-    pointer-events: auto;
-}
-div.intro_muscu ol li.proteine{
-    width:100.15%;
+
+.intro_quotidien ol li.D {
+    width: 12.15%;
     pointer-events: auto;
 }
 
-div.intro_quotidien ol li.omega-3{
-    width:9.95%;
+.intro_muscu ol li.proteine {
+    width: 100.15%;
     pointer-events: auto;
 }
-div.intro_muscu ol li.creatine{
-    width:111%;
-    pointer-events: auto;
-}
-div.intro_quotidien ol li.fer{
-    width:3%;
-    pointer-events: auto;
-}
-div.intro_muscu ol li.BCAA{
-    width:3%;
-    pointer-events: auto;
-}
-div.intro_quotidien ol li.calcium{
-    width:6%;
-    pointer-events: auto;
-}
-div.intro_muscu ol li.glutamine{
-    width:6%;
-    pointer-events: auto;
-}
-div.intro_quotidien ol li.B12{
-    width:14.55%;
-    pointer-events: auto;
-}
-div.intro_muscu ol li.beta{
-    width:62.85%;
-    pointer-events: auto;
-}
-div.intro_quotidien ol li.probiotiques{
-    width:10%;
-    pointer-events: auto;
-}
-div.intro_muscu ol li.citru{
-    width:82.5%;
-    pointer-events: auto;
-}
-div.intro_quotidien ol li.magnesium{
-    width:8%;
-    pointer-events: auto;
-}
-div.intro_muscu ol li.omega-3{
-    width:48%;
-    pointer-events: auto;
-}
-div.intro_quotidien ol li.zinc{
-    width:4%;
-    pointer-events: auto;
-}
-div.intro_muscu ol li.cafeine{
-    width:4%;
-    pointer-events: auto;
-}
-div.intro_quotidien ol li a{
-   color: #FAF5E9;
-   transition:0.3s all;
 
+.intro_quotidien ol li.omega-3 {
+    width: 9.95%;
+    pointer-events: auto;
 }
-div.intro_muscu ol li a{
+
+.intro_muscu ol li.creatine {
+    width: 111%;
+    pointer-events: auto;
+}
+
+.intro_quotidien ol li.fer {
+    width: 3%;
+    pointer-events: auto;
+}
+
+.intro_muscu ol li.BCAA {
+    width: 3%;
+    pointer-events: auto;
+}
+
+.intro_quotidien ol li.calcium {
+    width: 6%;
+    pointer-events: auto;
+}
+
+.intro_muscu ol li.glutamine {
+    width: 6%;
+    pointer-events: auto;
+}
+
+.intro_quotidien ol li.B12 {
+    width: 14.55%;
+    pointer-events: auto;
+}
+
+.intro_muscu ol li.beta {
+    width: 62.85%;
+    pointer-events: auto;
+}
+
+.intro_quotidien ol li.probiotiques {
+    width: 10%;
+    pointer-events: auto;
+}
+
+.intro_muscu ol li.citru {
+    width: 82.5%;
+    pointer-events: auto;
+}
+
+.intro_quotidien ol li.magnesium {
+    width: 8%;
+    pointer-events: auto;
+}
+
+.intro_muscu ol li.omega-3 {
+    width: 48%;
+    pointer-events: auto;
+}
+
+.intro_quotidien ol li.zinc {
+    width: 4%;
+    pointer-events: auto;
+}
+
+.intro_muscu ol li.cafeine {
+    width: 4%;
+    pointer-events: auto;
+}
+
+.intro_quotidien ol li a {
     color: #FAF5E9;
-    transition:0.3s all;
-}
-
-div.intro_muscu ol li:hover,div.intro_quotidien ol li:hover{
-    color: #FFCC00;
-    scale:1.1;
     transition: 0.3s all;
 
 }
-div.intro_muscu ol a:hover,div.intro_quotidien ol a:hover{
-    color: #FFCC00;
+
+.intro_muscu ol li a {
+    color: #FAF5E9;
     transition: 0.3s all;
+}
+
+.intro_muscu ol li:hover,
+div.intro_quotidien ol li:hover {
+    scale: 1.1;
 
 }
-div.intro_quotidien div.bloc1 iframe{
-    margin-top: 170px;
+
+.intro_muscu ol a:hover,
+div.intro_quotidien ol a:hover {
+    color: #FFCC00;
+}
+
+.intro_muscu div.bloc1 iframe,
+.intro_quotidien div.bloc1 iframe {
+    margin-top: 8%;
     float: right;
     transition: 0.3s all;
     margin-right: 60px;
     border-radius: 15px;
 }
-div.intro_muscu div.bloc1 iframe{
-    margin-top: 170px;
-    float: left;
-    transition: 0.3s all;
-    margin-left: 60px;
-    border-radius: 15px;
-    
-}
-div.intro_quotidien div.bloc1 iframe:hover{
-    scale: 1.1;
-    box-shadow: 6px 6px 6px #FFCC00;
-}
-div.intro_muscu div.bloc1 iframe:hover{
-    scale: 1.1;
-    box-shadow: 6px 6px 6px #FFCC00;
-}
-div.informations{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: 0.3s all;
 
+.intro_muscu div.bloc1 iframe {
+    float: left;
+    margin-left: 2%;
 }
-div.informations div.bloc1,
-div.informations div.bloc2,
-div.informations div.bloc3,
-div.informations div.bloc4,
-div.informations div.bloc5,
-div.informations div.bloc6,
-div.informations div.bloc7,
-div.informations div.bloc8{
+
+.informations {
+    transition: 0.3s all;
+}
+
+.informations div.bloc1,
+.informations div.bloc2,
+.informations div.bloc3,
+.informations div.bloc4,
+.informations div.bloc5,
+.informations div.bloc6,
+.informations div.bloc7,
+.informations div.bloc8 {
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom:50vh;
     text-align: left;
     align-items: center;
     height: 60vh;
 
 }
-div.informations div.bloc1{
-    margin-top:150vh;
-    
+
+.informations div.bloc1 {
+    margin-top: 150vh;
+
 }
-div.informations div.bloc1 div.D_txt,
-div.informations div.bloc3 div.fer_txt,
-div.informations div.bloc5 div.B12_txt,
-div.informations div.bloc7 div.magnesium_txt{
-    margin-top:165px ;
+
+.informations div.bloc1 div.D_txt,
+.informations div.bloc3 div.fer_txt,
+.informations div.bloc5 div.B12_txt,
+.informations div.bloc7 div.magnesium_txt {
+    margin-top: 15.5%;
     width: 40%;
     text-align: left;
-    margin-right: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 500px;
+    margin-right: 7%;
+    margin-bottom: 25%;
     float: right;
-    
+
 }
-div.informations div.bloc2 div.creatine_txt,
-div.informations div.bloc4 div.glutamine_txt,
-div.informations div.bloc6 div.citru_txt,
-div.informations div.bloc8 div.cafeine_txt{
-    margin-top:145px ;
+
+.informations div.bloc2 div.omega-3_txt,
+.informations div.bloc4 div.calcium_txt,
+.informations div.bloc6 div.probiotiques_txt,
+.informations div.bloc8 div.zinc_txt {
+    float: left;
+    margin-top: 15.5%;
     width: 40%;
     text-align: left;
-    margin-right: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 500px;
-    float: right;
-    
+    margin-left: 7%;
+    margin-bottom: 25%;
+
+
 }
-div.informations h3{
+
+.informations div.bloc1 div.prot_txt,
+.informations div.bloc3 div.BCAA_txt,
+.informations div.bloc5 div.beta_txt,
+.informations div.bloc7 div.omega-3_muscu_txt {
+    float: left;
+    margin-top: 10%;
+    width: 40%;
+    text-align: left;
+    margin-left: 7%;
+    margin-bottom: 15%;
+
+
+}
+
+.informations div.bloc2 div.creatine_txt,
+.informations div.bloc4 div.glutamine_txt,
+.informations div.bloc6 div.citru_txt,
+.informations div.bloc8 div.cafeine_txt {
+    margin-top: 10%;
+    width: 40%;
+    text-align: left;
+    margin-right: 7%;
+    margin-bottom: 15%;
+    float: right;
+
+}
+
+.informations h3 {
     color: #FFCC00;
     display: flex;
     clear: both;
     pointer-events: none;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
     margin-top: 0px;
 
 }
-div.informations p{
+
+.informations p {
 
     margin-top: 0px;
     display: flex;
@@ -723,126 +716,108 @@ div.informations p{
 
 }
 
-div.informations div.bloc1 img,
-div.informations div.bloc3 img,
-div.informations div.bloc5 img,
-div.informations div.bloc7 img{
+.informations div.bloc1 img,
+.informations div.bloc3 img,
+.informations div.bloc5 img,
+.informations div.bloc7 img {
     width: 50%;
     float: left;
     padding: 100px;
     border-radius: 125px;
     text-align: center;
-    margin-bottom: 500px;
-    margin-left:10px;
+    margin-bottom: 25%;
+    margin-left: 1%;
 
 
 }
-div.informations div.bloc2 img.muscu,
-div.informations div.bloc4 img.muscu,
-div.informations div.bloc6 img.muscu,
-div.informations div.bloc8 img.muscu{
-    width: 50%;
-    float: left;
-    padding: 100px;
-    border-radius: 125px;
-    text-align: center;
-    margin-bottom: 500px;
-    margin-left:10px;
 
-
-}
-div.informations div.bloc2 div.omega-3_txt,
-div.informations div.bloc4 div.calcium_txt,
-div.informations div.bloc6 div.probiotiques_txt,
-div.informations div.bloc8 div.zinc_txt{
-    float: left;
-    margin-top:225px ;
-    width: 40%;
-    text-align: left;
-    margin-left: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 300px;
-    
-
-}
-div.informations div.bloc1 div.prot_txt,
-div.informations div.bloc3 div.BCAA_txt,
-div.informations div.bloc5 div.beta_txt,
-div.informations div.bloc7 div.omega-3_muscu_txt{
-    float: left;
-    margin-top:125px ;
-    width: 40%;
-    text-align: left;
-    margin-left: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 300px;
-    
-
-}
-
-div.informations div.bloc2 img,
-div.informations div.bloc4 img,
-div.informations div.bloc6 img,
-div.informations div.bloc8 img{
+.informations div.bloc2 img,
+.informations div.bloc4 img,
+.informations div.bloc6 img,
+.informations div.bloc8 img {
     width: 50%;
     float: right;
     padding: 100px;
     border-radius: 125px;
     text-align: center;
-    margin-bottom: 500px;
-    margin-left:10px;
+    margin-bottom: 25%;
+    margin-right: 1%;
 }
-div.informations div.bloc1 img.muscu,
-div.informations div.bloc3 img.muscu,
-div.informations div.bloc5 img.muscu,
-div.informations div.bloc7 img.muscu{
+
+.informations div.bloc2 img.muscu,
+.informations div.bloc4 img.muscu,
+.informations div.bloc6 img.muscu,
+.informations div.bloc8 img.muscu {
+    width: 50%;
+    float: left;
+    padding: 100px;
+    border-radius: 125px;
+    text-align: center;
+    margin-bottom: 25%;
+    margin-left: 1%;
+
+
+}
+
+.informations div.bloc1 img.muscu,
+.informations div.bloc3 img.muscu,
+.informations div.bloc5 img.muscu,
+.informations div.bloc7 img.muscu {
     width: 50%;
     float: right;
     padding: 100px;
     border-radius: 125px;
     text-align: center;
-    margin-bottom: 500px;
-    margin-left:10px;
+    margin-bottom: 25%;
+    margin-left: 1%;
 }
-div.Tab_comparatif{
+
+
+
+
+
+
+.Tab_comparatif {
     width: 100%;
     float: left;
     color: #FFCC00;
     height: 80vh;
 
 }
-div.Tab_comparatif h2{
-    margin-top: 50px;
-    margin-left: 30px;
+
+div.Tab_comparatif h2 {
+    margin-top: 5%;
+    margin-left: 3%;
 
 
 }
 
-div.Tab_comparatif a{
+div.Tab_comparatif a {
     transition: 0.6s all;
     float: left;
-    margin-left: 55px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 5.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     color: #FFCC00;
-    margin-top: 50px;
+    margin-top: 5%;
     border-radius: 25px;
     border-style: dashed;
-    padding:10px;
+    padding: 1%;
     border-width: 2px;
     border-color: #FFCC00;
-   
+
 
 }
-div.Tab_comparatif a:hover{
-    transition: 0.6s all;
+
+.Tab_comparatif a:hover {
     background-color: #FFCC00;
     color: black;
-    
+
 
 }
+
 h1.Tab2,
-h1.Tab{
+h1.Tab {
     padding-top: 160px;
     margin-bottom: 150px;
     text-align: center;
@@ -852,8 +827,9 @@ h1.Tab{
     color: #FFCC00;
 
 }
-div.Tab2 div.bloc1,
-div.Tab div.bloc1{
+
+.Tab2 div.bloc1,
+.Tab div.bloc1 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -861,23 +837,26 @@ div.Tab div.bloc1{
     pointer-events: none;
 
 }
-div.Tab2 div.bloc1{
-    padding-bottom:50vh ;
+
+.Tab2 div.bloc1 {
+    padding-bottom: 50vh;
 
 }
-div.Tab div.bloc1 div.intro{
-    margin-left: 80px;
-    padding-bottom: 40px;
+
+.Tab div.bloc1 div.intro {
+    margin-left: 8%;
+    padding-bottom: 4%;
     padding-right: 0px;
     line-height: 1.5;
     width: 40%;
     flex-direction: column;
-   
+
 
 }
-div.Tab2 div.bloc1 div.intro{
-    margin-right: 80px;
-    padding-bottom: 40px;
+
+.Tab2 div.bloc1 div.intro {
+    margin-right: 8%;
+    padding-bottom: 4%;
     padding-left: 0px;
     line-height: 1.5;
     width: 40%;
@@ -885,32 +864,27 @@ div.Tab2 div.bloc1 div.intro{
     float: right;
 }
 
-p{
-   margin-top: 20px;
+p {
+    margin-top: 2%;
 }
 
-iframe.Tab{
+iframe.Tab {
     pointer-events: auto;
-    margin-top: -385px;
+    margin-top: -25%;
     float: right;
-    transition: 0.3s all;
-    margin-right: 100px;
-    border-radius: 15px;
+    margin-right: 10%;
 }
-iframe.Tab2{
+
+iframe.Tab2 {
     pointer-events: auto;
     float: left;
     transition: 0.3s all;
-    margin-left: 100px;
+    margin-left: 10%;
     border-radius: 15px;
 }
-iframe:hover{
-    scale: 1.1;
-    transition: 0.3s all;
-    box-shadow: 6px 6px 6px #FFCC00;
-}
-table{
-    padding: 10px;
+
+table {
+    padding: 1%;
     transition: 0.3 all;
     margin-left: 15%;
     margin-right: 15%;
@@ -920,67 +894,108 @@ table{
 
 
 }
-table tr td,tr th{
+
+table tr td,
+tr th {
     align-items: center;
     text-align: center;
     padding: 20px;
     padding-bottom: 40px;
     border-color: #FFCC00;
-    border-style:groove;
+    border-style: groove;
     border-width: 2px;
     transition: 0.3 all;
 
 }
-table tr th{
+
+table tr th {
     color: #030303;
     background-color: #FFCC00;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1%;
     border-color: #FFCC00;
-    border-style:groove;
+    border-style: groove;
     border-width: 2px;
     transition: 0.3 all;
 }
-div.conclusion_muscu,
-div.conclusion {
-    margin-top: 200px;
+
+.conclusion_muscu,
+.conclusion {
+    margin-top: 20%;
     height: 50vh;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
     padding-bottom: 100vh;
 }
-div.conclusion div.txt{
+
+.conclusion div.txt {
     width: 40%;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 75px;
+    margin-top: 7.5%;
     clear: both;
     float: right;
-    margin-right: 80px;
+    margin-right: 8%;
 }
-div.conclusion_muscu div.txt{
+
+.conclusion_muscu div.txt {
     width: 40%;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 75px;
+    margin-top: 7.5%;
     clear: both;
     float: left;
-    margin-left: 80px;
+    margin-left: 8%;
 }
-div.conclusion img{
+
+.conclusion img {
+    margin-top: -28.5%;
     width: 50%;
     float: left;
-    margin-right: 40px;
+    margin-right: 4%;
     padding: 100px;
     border-radius: 125px;
 }
-div.conclusion_muscu img{
-    margin-top: 30px;
+
+.conclusion_muscu img {
+    margin-top: 3%;
     width: 50%;
     float: right;
-    margin-left: 40px;
+    margin-left: 4%;
     padding: 100px;
     border-radius: 125px;
+}
+
+.acces_rapide {
+    margin-top: 3%;
+    width: 200%;
+    margin-left: 4%;
+    padding: 100px;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 2px;
+    margin: 10%;
+
+}
+
+.acces_rapide a {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #FFCC00;
+    color: #FFCC00;
+    text-decoration: none;
+    margin-left: 5%;
+    margin-bottom: 30%;
+    transition: 0.6s all;
+    pointer-events: auto;
+}
+.acces_rapide a:hover {
+    background-color: #FFCC00;
+    color: #000000;
 }
