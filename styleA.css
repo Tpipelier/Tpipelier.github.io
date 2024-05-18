@@ -116,18 +116,12 @@ main {
 .bloc1 div.part2,
 .bloc1 div.part3 {
     justify-content: space-between;
-    margin-top: 40%;
-    padding-bottom: 20vh;
+    margin-top: 40vh;
+    padding-bottom: 40vh;
 }
-
 .bloc1 div.part3 {
-    justify-content: space-between;
-    margin-top: 60%;
-    padding-bottom: 20vh;
+    margin-top: 60vh;
 }
-
-
-
 .bloc1 div.part1 div.txt,
 .bloc1 div.part2 div.txt,
 .bloc1 div.part3 div.txt {
@@ -184,8 +178,8 @@ main {
 .bloc1 div.part2 div.txt p a {
     width: 18.75%;
     text-align: center;
-    border-radius: 30%;
-    border-width: 2%;
+    border-radius: 3rem;
+    border-width: 0.2rem;
     border-style: dashed;
     border-color: #FFCC00;
     color: #FFCC00;
@@ -204,9 +198,9 @@ main {
 
 }
 
-img {
+img{
     flex-direction: column;
-    border-radius: 10%;
+    border-radius:2rem;
 }
 
 .bloc1 div.part1 img,
@@ -260,7 +254,7 @@ h2.redirection_titre {
 .redirection figure.muscu img,
 .redirection figure.quotidien img {
     pointer-events: auto;
-    border-radius: 8.5%;
+    border-radius: 2rem;
     width: 100%;
     transition: transform 0.3s ease;
 
@@ -270,7 +264,8 @@ h2.redirection_titre {
     pointer-events: auto;
     height: 40%;
     color: #ffcc0000;
-    font-size: 16px;
+    font-size: 100%;
+    line-height: 1.6rem;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -278,9 +273,11 @@ h2.redirection_titre {
     text-align: center;
     transition: 0.3s all;
 }
+.redirection figcaption p,
+.redirection figcaption h2 {
+    margin: 1rem;
 
-
-
+}
 
 
 .redirection figure:hover img {
@@ -293,7 +290,7 @@ h2.redirection_titre {
 
 .redirection figure:hover figcaption {
     background-color: #2d2c2b63;
-    border-radius: 15%;
+    border-radius: 2rem;
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -323,7 +320,7 @@ h2.redirection_titre {
     height: 65vh;
 }
 iframe {
-    border-radius: 5%;
+    border-radius: 2.5rem;
     transition: 0.6s all;
 }
 
@@ -369,7 +366,7 @@ iframe {
     color: #000000;
     transition: 0.6s all;
     background-color: #FFCC00;
-    border-radius: 15%;
+    border-radius: 0.1rem;
 
 }
 
@@ -381,7 +378,8 @@ iframe {
 }
 
 .intro_muscu {
-    margin-bottom: 10%;
+    height: 100vh;
+    width: 100%;
     
 }
 
@@ -481,7 +479,7 @@ iframe {
     text-align: left;
     float: left;
     line-height: 2;
-    width: 50%;
+    width: 100%;
     margin-left: 16%;
     padding-right: 0px;
     padding-left: 0px;
@@ -495,7 +493,6 @@ iframe {
 .intro_muscu ol {
     text-align: left;
     float: none;
-    width: 20%;
     margin-top: 1%;
     padding-top: none;
     padding-bottom: 0px;
@@ -503,7 +500,6 @@ iframe {
 }
 
 .intro_quotidien ol li {
-    width: 11%;
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -522,22 +518,22 @@ iframe {
 }
 
 .intro_quotidien ol li.D {
-    width: 12.15%;
+    width: 11.3vh;
     pointer-events: auto;
 }
 
 .intro_muscu ol li.proteine {
-    width: 100.15%;
+    width: 20.7vh;
     pointer-events: auto;
 }
 
 .intro_quotidien ol li.omega-3 {
-    width: 9.95%;
+    width: 9.305vh;
     pointer-events: auto;
 }
 
 .intro_muscu ol li.creatine {
-    width: 111%;
+    width: 22.95vh;
     pointer-events: auto;
 }
 
@@ -562,12 +558,12 @@ iframe {
 }
 
 .intro_quotidien ol li.B12 {
-    width: 14.55%;
+    width: 13.6075vh;
     pointer-events: auto;
 }
 
 .intro_muscu ol li.beta {
-    width: 62.85%;
+    width: 12.96vh;
     pointer-events: auto;
 }
 
@@ -577,7 +573,7 @@ iframe {
 }
 
 .intro_muscu ol li.citru {
-    width: 82.5%;
+    width: 16.96vh;
     pointer-events: auto;
 }
 
@@ -587,7 +583,7 @@ iframe {
 }
 
 .intro_muscu ol li.omega-3 {
-    width: 48%;
+    width: 9.86vh;
     pointer-events: auto;
 }
 
@@ -628,7 +624,7 @@ div.intro_quotidien ol a:hover {
     float: right;
     transition: 0.3s all;
     margin-right: 6%;
-    border-radius: 5%;
+    border-radius: 2rem;
 }
 
 .intro_muscu div.bloc1 iframe {
@@ -648,16 +644,16 @@ div.intro_quotidien ol a:hover {
 .informations div.bloc6,
 .informations div.bloc7,
 .informations div.bloc8 {
+    display: flow-root;
     justify-content: space-between;
-    flex-direction: column;
     text-align: left;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
 
 }
 
 .informations div.bloc1 {
-    margin-top: 150vh;
+    margin-top: 50vh;
 
 }
 
@@ -743,7 +739,7 @@ div.intro_quotidien ol a:hover {
     width: 50%;
     float: left;
     padding: 7%;
-    border-radius: 25%;
+    border-radius: 10rem;
     text-align: center;
     margin-bottom: 25%;
     margin-left: 1%;
@@ -758,7 +754,7 @@ div.intro_quotidien ol a:hover {
     width: 50%;
     float: right;
     padding: 7%;
-    border-radius: 25%;
+    border-radius: 10rem;
     text-align: center;
     margin-bottom: 25%;
     margin-right: 1%;
@@ -771,7 +767,7 @@ div.intro_quotidien ol a:hover {
     width: 50%;
     float: left;
     padding: 7%;
-    border-radius: 25%;
+    border-radius: 10rem;
     text-align: center;
     margin-bottom: 25%;
     margin-left: 1%;
@@ -786,7 +782,7 @@ div.intro_quotidien ol a:hover {
     width: 50%;
     float: right;
     padding: 7%;
-    border-radius: 25%;
+    border-radius: 10rem;
     text-align: center;
     margin-bottom: 25%;
     margin-left: 1%;
@@ -822,7 +818,7 @@ div.intro_quotidien ol a:hover {
     border-radius: 25rem;
     border-style: dashed;
     padding: 1%;
-    border-width: 2%;
+    border-width: 0.2rem;
     border-color: #FFCC00;
 
 
@@ -854,11 +850,12 @@ h1.Tab {
     width: 100%;
     text-align: left;
     pointer-events: none;
-
+    display: inline;
 }
 
 .Tab2 div.bloc1 {
     padding-bottom: 50vh;
+    
 }
 
 .Tab div.bloc1 div.intro{
@@ -892,7 +889,6 @@ iframe.Tab {
     margin-left: 10%;
     width: 35%;
     height: 35vh;
-    border-radius: 5%;
 }
 
 iframe.Tab2 {
@@ -901,7 +897,6 @@ iframe.Tab2 {
     pointer-events: auto;
     transition: 0.3s all;
     margin-right: 5%;
-    border-radius: 5%;
     width: 35%;
     height: 35vh;
 }
@@ -926,7 +921,7 @@ tr th {
     padding-bottom: 40px;
     border-color: #FFCC00;
     border-style: groove;
-    border-width: 2px;
+    border-width: 0.2rem;
     transition: 0.3 all;
 
 }
@@ -980,7 +975,7 @@ table tr th {
     float: left;
     margin-right: 4%;
     padding: 7%;
-    border-radius: 25%;
+    border-radius: 10rem;
 }
 
 .conclusion_muscu img {
@@ -989,33 +984,34 @@ table tr th {
     float: right;
     margin-left: 4%;
     padding: 7%;
-    border-radius: 25%;
+    border-radius: 10rem;
 }
 
 .acces_rapide {
-    margin-top: 3%;
+    align-items: center;
+    margin-top: 10%;
     width: 200%;
-    margin-left: 4%;
-    padding: 100px;
-    border-radius: 25px;
+    padding: 5rem;
+    border-radius: 2.5rem;
     border-style: groove;
-    border-width: 2px;
-    margin: 10%;
-
+    border-width: 0.2rem;
 }
-
-.acces_rapide a {
-    padding: 10px;
+.acces_rapide div.special{
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+.acces_rapide div.special a {
+    padding: 1rem;
     width: 100%;
-    text-align: left;
-    border-radius: 25px;
-    border-width: 2px;
+    margin-left:1% ;
+    text-align: center;
+    border-radius: 25rem;
+    border-width: 0.2rem;
     border-style: dashed;
     border-color: #FFCC00;
     color: #FFCC00;
     text-decoration: none;
-    margin-left: 5%;
-    margin-bottom: 30%;
     transition: 0.6s all;
     pointer-events: auto;
 }
