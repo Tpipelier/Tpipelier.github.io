@@ -184,7 +184,7 @@ main {
     border-color: #FFCC00;
     color: #FFCC00;
     text-decoration: none;
-    margin-top: 0px;
+    margin-top: 2%;
     padding: 0.01%;
     transition: 0.6s all;
     pointer-events: auto;
@@ -392,7 +392,7 @@ iframe {
 }
 .intro_muscu div.bloc1 iframe,
 .intro_quotidien div.bloc1 iframe {
-    margin-top: -22.5%;
+    margin-top: -20.5%;
     width: 37.5%;
     height: 40vh;
 
