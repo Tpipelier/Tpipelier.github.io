@@ -997,7 +997,7 @@ table tr th {
     border-width: 0.2rem;
 }
 .acces_rapide div.special{
-    margin-left:10%;
+    margin-left:5%;
     margin-right:10%;
     
 }
@@ -1015,7 +1015,7 @@ table tr th {
     transition: 0.6s all;
     pointer-events: auto;
 }
-.acces_rapide a:hover {
+.acces_rapide div.special a:hover {
     background-color: #FFCC00;
     color: #000000;
 }
