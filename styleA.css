@@ -644,7 +644,6 @@ div.intro_quotidien ol a:hover {
 .informations div.bloc6,
 .informations div.bloc7,
 .informations div.bloc8 {
-    display: flow-root;
     justify-content: space-between;
     text-align: left;
     align-items: center;
